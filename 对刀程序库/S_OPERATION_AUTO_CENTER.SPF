@@ -152,7 +152,7 @@ G90	G01	X=TOOL_SET[11]-5			;测头退出腰型孔
 
 ----------------耳朵端面测量------------------
 NEXT:
-G90	G53	G01	X=TOOL_SET[11]-INI[40]+2*TOOL_SET[9]	;测头X向开到耳朵端面外缘
+G90	G53	G01	X=TOOL_SET[11]-INI[43]+2*TOOL_SET[9]	;测头X向开到耳朵端面外缘
 IF TOOL_SET[25]==10 GOTOF BACK									;判断耳朵端面是否磨削
 
 G94 G91 G1 Z=-[INI30] MEAS=1
